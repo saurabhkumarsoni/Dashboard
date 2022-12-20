@@ -1,0 +1,35 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-raised-button class="btn-bg" (click)="toggleSideBar()">
+            <mat-icon class="icon-color">menu</mat-icon>
+          </button>
+    
+    <span>APP LOGO</span>
+    
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+        <ul fxLayout="row" fxLayoutGap="20px">
+            <li>
+                <button mat-icon-button  class="btn-bg">
+                    <mat-icon class="icon-color">settings</mat-icon>
+                </button>
+            </li>
+            <li>
+                <button mat-icon-button  class="btn-bg">
+                    <mat-icon class="icon-color">help_outline</mat-icon>
+                </button>
+            </li>
+            <li>
+                <button mat-button [matMenuTriggerFor]="menu" class="btn-bg">
+                    <mat-icon class="icon-color">person_outline</mat-icon>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item (click)="logOut()">
+                            <mat-icon>exit_to_app</mat-icon>
+                            Sign Out
+                        </button>
+                    </mat-menu>
+                </button>
+            </li>
+        </ul>
+    </div>
+    </mat-toolbar-row>
+  </mat-toolbar>

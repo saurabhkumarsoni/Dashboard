@@ -1,0 +1,11 @@
+ul li {
+    list-style: none; 
+}
+.btn-bg{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.icon-color{
+    color: #fff;
+}
